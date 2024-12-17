@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'calibri';
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Formatação do header */
+
+header{
+    position: fixed;
+    background-color: rgb(148, 175, 185);
+    height: 10dvh;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2%;
+}
+
+header h2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header h2 img{
+
+    height: 80%;
+
+}
+
+#btn-menu {
+    height: 8dvh;
+    width: 8dvh;
+    background-color: rgba(124, 124, 124, 0.5);
+    border-width: 0px;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+#btn-menu img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    padding-top: 10dvh;
+    background: linear-gradient(270deg, white, rgb(172, 189, 189));
+
+    /* border: solid 1px; */
+    /* padding: 5%; */
+}
+
+/* Formatação do menu lateral */
+
+#menu {
+    width: 30%;
+    margin-left: -30%;
+    background-color: rgb(172, 189, 189);
+    transition: 1s;
+    z-index: 1;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    /* border: solid 1px; */
+    /* height: 100%; */
+}
+
+li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.5);            
+    margin-block: 1%;
+    padding: 2%;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.box-scroll-img {
+    height: 100%;
+    width: 300%;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+.box-imgs-jogador {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    height: 30%;
+    
+}
+
+.box-imgs-jogador h4 {
+    width: 100%;
+    text-align: center;
+}
+
+.galeria-imgs {
+    height: 90%;
+    width: 80%;
+    overflow: hidden;
+
+}
+
+.btns-galery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    height: 40%;
+    width: 10%;
+    border-width: 0px;
+}
+
+.btns-galery img{
+    height: 100%;
+    
+}
+
+.box-scroll-img>div {
+
+    width: calc(100%/6);
+    transition: 1s;
+    padding: 2%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box-scroll-img img {
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+
+
+
+
+
+#box-cores {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px rgba(255, 255, 255, 0.5);
+}
+
+#cores {
+    display: inline-block;
+    background-color: red;
+    width: 100%;
+    transform: scale(2);
+    height: 150%;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+label{
+    text-wrap: nowrap;
+    margin: auto;
+    font-size: 110%;
+}
+
+/* fim da fortação do menu lateral */
+
+
+
+#jogo {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    /* border: solid 1px; */
+
+    /* flex-wrap: wrap; */
+
+}
+
+#box-placar{
+    width: 95%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#box-placar div{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-placar{
+    height: 60%;
+    width: auto;
+    border-radius: 10px;
+    padding: 5%;
+    animation: 1s infinite;
+
+}
+
+#box {
+    height: 50vh;
+    width: 50vh;
+    box-shadow: 0px 0px 10px 0px rgba(233, 233, 233, 0.5);
+    background-color: rgba(66, 66, 66, 0.2);
+    transition: 0.5s;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    position: absolute;
+    /* top: 50%; */
+
+}
+
+.boxs {
+    background-color: rgba(233, 233, 233, 0.4);
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.boxs img {
+    height: 80%;
+    width: 80%;
+}
+
+.boxs:hover {
+    background-color: rgba(196, 196, 196, 0.9);
+
+}
+
+/* .img-placar {
+    margin-block: 10%;
+    width: 100%;
+    padding: 5%;
+    border-radius: 20px;
+    transition: 0.5s;
+    animation-duration: 1s;
+    opacity: 0.7;
+} */
+
+#jogo h3 {
+    font-size: 300%;
+}
+
+
+
+@keyframes ganhou {
+
+    50% {
+        transform: rotate(360deg);
+        background-color: rgb(34, 167, 34);
+    }
+
+}
+
+
+
+
+
+
+
+
+#box-linha {
+    /* background-color: aqua; */
+    height: 50vh;
+    width: 50vh;
+    /* margin-top: ; */
+    position: relative;
+    top: -102%;
+    /* left: -5%; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#linha {
+    background-color: rgb(100, 182, 100);
+    width: 5%;
+    height: 95%;
+    border-radius: 10px;
+    /* transform: rotate(90deg); */
+    /* margin-left: -66%; */
+}
+
+.linha-123 {
+    transform: rotate(90deg);
+    margin-top: -67%;
+}
+
+.linha-456 {
+    transform: rotate(90deg);
+}
+
+.linha-789 {
+    transform: rotate(90deg);
+    margin-top: 68%;
+}
+
+.linha-147 {
+    transform: rotate(0deg);
+    margin-left: -66%;
+}
+
+.linha-369 {
+    transform: rotate(0deg);
+    margin-left: 69%;
+}
+
+.linha-357 {
+    transform: rotate(45deg);
+    margin-top: 2%;
+}
+
+.linha-159 {
+    transform: rotate(135deg);
+}
+
+.linha-258 {
+    transform: rotate(0deg);
+}
+
+@media (max-width: 768px){
+    #jogo{
+        flex-direction: column;
+        height: 90%;
+    }
+    
+    #box{
+        position: relative;
+    }
+
+    #box-placar{
+        /* background-color: red; */
+        height: 20%;
+        width: 70%;
+    }
+
+    #box-placar div{
+
+        width: 40%;
+        
+
+    }
+
+    #box-placar img{
+        height: 80%;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 480px){
+    #menu{
+        position: absolute;
+        width: 80%;
+        margin-left: -80%;
+        height: 100dvh;
+    }
+
+    #btn-menu{
+        padding: 2%;
+    }
+
+   
+}

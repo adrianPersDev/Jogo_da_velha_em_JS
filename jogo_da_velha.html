@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo-doc"> | Jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="icon-aba" rel="shortcut icon" href="img/logo-dev.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+        <h2>
+            <img src="img/logo-dev.png" alt="">
+            Adrian Dev
+        </h2>
+
+        <button id="btn-menu" onclick="moverMenu()">
+            <img src="img/icon-menu.png" id="img-btn-menu">
+        </button>
+    </header>
+
+    <main>
+    <ul id="menu">
+        <li><h2>Menu de configurações</h2>
+            <!-- <button id="botao-menu" onclick="moverMenu()">
+                <img src="img/icon-menu.png" id="img-btn-menu">
+            </button></li> -->
+
+        <li class="box-imgs-jogador">
+            <h4>Jogador 1</h4>
+            <button class="btns-galery" onclick="gallery(1, 'esquerda', 6, 2)"><img src="img/icon-seta-esquerda.png" alt=""></button>
+            <div class="galeria-imgs">
+                <div class="box-scroll-img">
+                    
+                    <div class="box-imgs" id="item-01-01">
+                        <img class="imgs-jogador-01" style="background-color: rgba(255, 255, 255, 0.3);" src="img/O.png" onclick="mudarImgJogador(1, 0)">
+                    </div>
+                    <div class="box-imgs">
+                        <img class="imgs-jogador-01" style="opacity: 0.3;" src="img/X.png" onclick="mudarImgJogador(1, 1)">
+                    </div>
+                    <div class="box-imgs">
+                        <img class="imgs-jogador-01" src="img/e.png" onclick="mudarImgJogador(1, 2)">
+                    </div>
+                    <div class="box-imgs">
+                        <img class="imgs-jogador-01" src="img/b.png" onclick="mudarImgJogador(1, 3)">
+                    </div>
+                    <div class="box-imgs">
+                        <img class="imgs-jogador-01" src="img/c.png" onclick="mudarImgJogador(1, 4)">
+                    </div>
+                    <div class="box-imgs">
+                        <img class="imgs-jogador-01" src="img/f.png" onclick="mudarImgJogador(1, 5)">
+                    </div>
+                    
+                </div>
+            </div>
+            <button class="btns-galery" onclick="gallery(1, 'direita', 6, 2)"><img src="img/icon-seta-direita.png"></button>
+        </li>
+        <li class="box-imgs-jogador">
+            <h4>Jogador 2</h4>
+            <button class="btns-galery" onclick="gallery(2, 'esquerda', 6, 2)"><img src="img/icon-seta-esquerda.png" alt=""></button>
+            <div class="galeria-imgs">
+                <div class="box-scroll-img" >
+                    
+                    <div class="box-imgs" id="item-01-02">
+                        <img class="imgs-jogador-02"  src="img/O.png" style="opacity: 0.3;" onclick="mudarImgJogador(2, 0)">
+                    </div>
+                    <div class="box-imgs">
+                        <img class="imgs-jogador-02" style="background-color: rgba(255, 255, 255, 0.3);" src="img/X.png" onclick="mudarImgJogador(2, 1)">
+                    </div>
+                    <div class="box-imgs">
+                        <img class="imgs-jogador-02" src="img/e.png" onclick="mudarImgJogador(2, 2)">
+                    </div>
+                    <div class="box-imgs">
+                        <img class="imgs-jogador-02" src="img/b.png" onclick="mudarImgJogador(2, 3)">
+                    </div>
+                    <div class="box-imgs">
+                        <img class="imgs-jogador-02" src="img/c.png" onclick="mudarImgJogador(2, 4)">
+                    </div>
+                    <div class="box-imgs">
+                        <img class="imgs-jogador-02" src="img/f.png" onclick="mudarImgJogador(2, 5)">
+                    </div>
+
+                </div>
+            </div>
+            <button class="btns-galery" onclick="gallery(2, 'direita', 6, 2)"><img src="img/icon-seta-direita.png"></button>
+        </li>
+
+        <li>
+            <div id="box-cores">
+    
+                <input type="color" id="cores" onclick="trocarCor()" value="#acbdbd">
+            </div>
+
+        <label for="cores">Altere a cor de tema da página</label>
+
+        
+    
+        </li>
+    </ul>
+    
+    
+
+    <div id="jogo">
+
+        <div id="box-placar">
+            <div class="boxs-jogadores">
+                <h4>Jogador 1</h4>
+                <h2 class="placar">0</h2>
+
+                <img class="jogador01 img-placar">
+            </div>
+           
+            <div class="boxs-jogadores">
+                <h4>Jogador 2</h4>
+                <h2 class="placar">0</h2>
+
+                <img class="jogador02 img-placar">
+
+            </div>
+        </div>
+
+        
+       
+
+        <div id="box">
+            <div class="boxs" onclick="jogar(1)"></div>
+            <div class="boxs" onclick="jogar(2)"></div>
+            <div class="boxs" onclick="jogar(3)"></div>
+            <div class="boxs" onclick="jogar(4)"></div>
+            <div class="boxs" onclick="jogar(5)"></div>
+            <div class="boxs" onclick="jogar(6)"></div>
+            <div class="boxs" onclick="jogar(7)"></div>
+            <div class="boxs" onclick="jogar(8)"></div>
+            <div class="boxs" onclick="jogar(9)"></div>
+            <div id="box-linha">
+            </div>
+
+            <!-- a função JOGAR() recebe o número da cado que o jogador clicou -->
+        </div>
+
+    
+    </main>
+
+<script src="script.js"></script>
+    </div>
+
+</body>
+
+</html>
